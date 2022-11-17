@@ -11,11 +11,18 @@
     background-color: white;
     align-items: center;
     align-content: center;
-    margin: 0 auto;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
     font-family: 'Montserrat Alternates', sans-serif;
     box-shadow: 4px 4px 8px black;
     border: 0px solid rgba(0, 0, 0, 0);
     border-radius: 10px;
+    align-self: center;
+    vertical-align: middle;
 }
 
 .background img {
@@ -157,7 +164,7 @@ a {
     text-decoration: none;
 }
 
-.becode a:visited span {
+.becode a:visited {
     color: rgb(56, 56, 56);
 }
 
