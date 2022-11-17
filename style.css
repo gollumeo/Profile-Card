@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
 
 .vcard {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     height: 500px;
     width: 400px;
     border-collapse: collapse;
