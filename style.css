@@ -2,6 +2,8 @@
 
 .vcard {
     display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     height: 500px;
     width: 400px;
     border-collapse: collapse;
@@ -25,11 +27,11 @@
 
 .upper_part {
     position: relative;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     margin-top: -100px;
     background-color: white;
+    align-self: center;
+    justify-items: center;
 }
 
 .upper_part img {
@@ -38,6 +40,7 @@
     border-radius: 50%;
     margin-top: -70px;
     border: 3px solid white;
+    margin-left: 130px;
 }
 
 h1 {
@@ -121,13 +124,24 @@ h2 {
     background: white;
 }
 
+.bottom_part
+{
+    display:grid;
+    grid-template-areas: "foot foot";
+    grid-template-columns: 65 35%;
+    justify-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
 .bottom_part img {
+    grid-area: foot foot;
     width: 25px;
     height: 25px;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: -20px;
-    padding-top: 20px;
+    margin-right: 22px;
+    margin-left: 22px;
+    padding-bottom: 20px;
+
 }
 
 span.becode {
