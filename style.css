@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
 
-.vcard
-{
-    display:flex;
+.vcard {
+    display: flex;
     flex-direction: column;
     height: 500px;
     width: 400px;
@@ -12,54 +11,54 @@
     align-items: center;
     align-content: center;
     margin: 0 auto;
-    font-family:'Montserrat Alternates', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     box-shadow: 4px 4px 8px black;
-    border: 1px solid rgba(0, 0, 0, 0);
+    border: 0px solid rgba(0, 0, 0, 0);
     border-radius: 10px;
 }
 
-.background img
-{
+.background img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     filter: brightness(0.5)
 }
 
-.upper_part
-{
+.upper_part {
     position: relative;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: -100px;
     background-color: white;
 }
 
-h1
-{
-    text-align: center;
-}
-
-.upper_part img
-{
+.upper_part img {
     width: 35%;
     height: auto;
     border-radius: 50%;
-    margin-top:-70px;
+    margin-top: -70px;
     border: 3px solid white;
 }
 
-.infos
-{
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 100%;
+    margin-top: -8px;
+}
+
+.infos {
     display: flex;
     flex-direction: column;
     align-content: center;
     text-align: center;
 }
 
-.infos li
-{
+.infos li {
     list-style: none;
     text-align: center;
     padding-right: 64px;
@@ -67,8 +66,7 @@ h1
     padding-bottom: 2.5px;
 }
 
-.style-resize > .mail::before 
-{
+.style-resize>.mail::before {
     content: '';
     display: inline-block;
     height: 25px;
@@ -81,8 +79,7 @@ h1
     vertical-align: middle;
 }
 
-.style-resize > .phone::before 
-{
+.style-resize>.phone::before {
     content: '';
     display: inline-block;
     height: 25px;
@@ -95,8 +92,7 @@ h1
     vertical-align: middle;
 }
 
-.style-resize > .website::before 
-{
+.style-resize>.website::before {
     content: '';
     display: inline-block;
     height: 25px;
@@ -109,8 +105,7 @@ h1
     vertical-align: middle;
 }
 
-.style-resize > .location::before 
-{
+.style-resize>.location::before {
     content: '';
     display: inline-block;
     height: 25px;
@@ -123,19 +118,65 @@ h1
     vertical-align: middle;
 }
 
-.infos
-{
+.infos {
     background: white;
 }
 
-.bottom_part img
-{
+.bottom_part img {
     width: 25px;
     height: 25px;
     margin-right: 20px;
     margin-left: 20px;
-    margin-top: -10px;
-    position: relative;
+    margin-top: -20px;
     padding-top: 20px;
-    padding-right: 
+}
+
+span.becode {
+    font-style: italic;
+    color: rgb(56, 56, 56);
+}
+
+.becode a {
+    color: rgb(56, 56, 56);
+}
+
+a {
+    text-decoration: none;
+}
+
+.becode a:visited span {
+    color: rgb(56, 56, 56);
+}
+
+.becode a:hover {
+    background: -webkit-linear-gradient(-3deg, rgb(10, 127, 232), rgb(0, 0, 0));
+    background: linear-gradient(-3deg, rgb(10, 127, 232), rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a
+{
+    color: black;
+}
+
+a:visited
+{
+    color: black;
+    font-style: italic;
+}
+
+a:hover 
+{
+    font-weight: bold;
+}
+
+a:active 
+{
+    font-size: 1.2em;
+}
+
+.bottom_part img:hover
+{
+    transform: scale(1.2);
 }
